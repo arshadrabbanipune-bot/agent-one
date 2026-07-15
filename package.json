@@ -1,0 +1,11 @@
+{
+  "name": "arshad-os-oauth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "lint": "node --check app.js && node --check api/assistant.js && node --check api/_assistantCore.js && node --check api/_notion.js && node --check api/_store.js",
+    "typecheck": "npm run lint",
+    "build": "node scripts/validate-build.mjs"
+  }
+}
